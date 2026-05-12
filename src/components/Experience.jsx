@@ -54,10 +54,7 @@ export default function Experience() {
         <div className="relative mt-16 overflow-hidden isolate">
           
           {/* Timeline Bar (Desktop: Horizontal, Mobile: slightly adapted or hidden if we use carousel dots instead, but user wants full-width line) */}
-          {/* LINE BEHIND - DESKTOP ONLY */}
-          <div className="hidden md:block absolute inset-x-0 top-1/2 -translate-y-1/2 z-[-1] pointer-events-none">
-            <div className="h-[2px] w-full bg-gradient-to-r from-[#8B5CF6] via-[#06B6D4] to-[#F59E0B] rounded-full shadow-md" />
-          </div>
+
 
           {/* Navigation Arrows */}
           {isMobile && (
@@ -72,7 +69,17 @@ export default function Experience() {
           )}
 
           {/* CARDS ABOVE */}
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div 
+            className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
+            style={{ zIndex: 10 }}
+          >
+            {/* LINE BEHIND - DESKTOP ONLY */}
+            <div 
+              className="hidden md:block absolute inset-x-0 top-1/2 -translate-y-1/2 pointer-events-none"
+              style={{ zIndex: -1 }}
+            >
+              <div className="h-[2px] w-full bg-gradient-to-r from-[#8B5CF6] via-[#06B6D4] to-[#F59E0B] rounded-full shadow-md" />
+            </div>
             <AnimatePresence mode="popLayout">
               {visibleExperiences.map((exp, index) => (
                 <motion.div
