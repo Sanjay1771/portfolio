@@ -1,116 +1,217 @@
-# Sanjay K — Portfolio
+# Sanjay K — Personal Portfolio
 
-Premium, modern, fully responsive personal portfolio built with React 18, Vite, Tailwind CSS, and Framer Motion.
+A premium, modern, fully responsive personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion.
+
+🌐 **Live Demo:** Add your deployed Vercel URL here
+📂 **GitHub Repository:** [https://github.com/Sanjay1771/portfolio](https://github.com/Sanjay1771/portfolio)
+
+---
+
+## 🚀 About the Project
+
+This portfolio showcases my:
+
+* Full Stack Development projects
+* Flutter mobile applications
+* AI and Machine Learning projects
+* Internship experience
+* Technical skills
+* Certifications
+* Contact information
+
+The website is designed with a premium glassmorphism UI, smooth animations, and a fully responsive layout to create a professional impression for recruiters and freelance clients.
+
+---
 
 ## ✨ Features
 
-- 🎨 **Glassmorphism UI** — Frosted glass cards with backdrop blur
-- 🌈 **Gradient Accents** — Violet (#8B5CF6) to Cyan (#06B6D4)
-- 🎬 **Framer Motion Animations** — Smooth scroll reveals, hover lifts, stagger effects
-- ⌨️ **Typing Effect** — Dynamic role showcase in hero
-- ⌘K **Command Palette** — Quick navigation (Ctrl+K / ⌘K)
-- 📱 **Fully Responsive** — Mobile-first, works on all devices
-- 🔍 **SEO Optimized** — Meta tags, Open Graph, JSON-LD schema
-- ♿ **Accessible** — ARIA labels, keyboard navigation, focus styles
-- 🎯 **11 Sections** — Hero, About, Skills, Services, Projects, Education, Testimonials, Stats, CTA, Contact, Footer
+* 🌟 Premium glassmorphism design
+* 🎨 Dark theme with gradient accents
+* ⚡ Smooth Framer Motion animations
+* 🧠 Typing effect in Hero section
+* 📱 Fully responsive design
+* 🧭 Sticky navigation with active underline
+* 📂 Project showcase with GitHub links
+* 💼 Experience section
+* 🏆 Certifications section
+* 📅 Technical events section
+* 📬 Contact form
+* 🔝 Scroll-to-top button
+* ⌨️ Command menu (Ctrl + K)
+
+---
 
 ## 🛠️ Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| React 18 | UI Framework |
-| Vite | Build Tool |
-| Tailwind CSS 3 | Styling |
-| Framer Motion | Animations |
-| React Icons | Icon Library |
-| React Typed | Typing Effect |
-| tsparticles | Particle Background |
+### Frontend
 
-## 🚀 Getting Started
+* React 18
+* Vite
+* Tailwind CSS
+* Framer Motion
+* React Icons
 
-### Prerequisites
-- Node.js 18+
-- npm or yarn
+### Tools & Platforms
 
-### Installation
+* Git & GitHub
+* Vercel
+* VS Code
 
-```bash
-# Clone the repo
-git clone https://github.com/sanjayk/portfolio.git
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-```
-
-### Build for Production
-
-```bash
-npm run build
-npm run preview  # Preview the build locally
-```
-
-## 🌐 Deploy to Vercel
-
-### Option 1: CLI
-```bash
-npm install -g vercel
-vercel
-```
-
-### Option 2: GitHub Integration
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your GitHub repository
-4. Vercel auto-detects Vite and deploys
-
-### Build Settings (if needed)
-- **Framework Preset**: Vite
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
+---
 
 ## 📁 Project Structure
 
-```
-src/
-├── assets/          # Images and static assets
-├── components/      # React components
-│   ├── Navbar.jsx
-│   ├── Hero.jsx
-│   ├── About.jsx
-│   ├── Skills.jsx
-│   ├── Services.jsx
-│   ├── Projects.jsx
-│   ├── Education.jsx
-│   ├── Testimonials.jsx
-│   ├── Stats.jsx
-│   ├── CTA.jsx
-│   ├── Contact.jsx
-│   ├── Footer.jsx
-│   ├── CommandMenu.jsx
-│   ├── GlassCard.jsx
-│   ├── SectionHeading.jsx
-│   ├── AnimatedCounter.jsx
-│   ├── ScrollToTop.jsx
-│   └── ParticlesBg.jsx
-├── data/            # Static data files
-├── hooks/           # Custom React hooks
-├── App.jsx
-├── main.jsx
-└── index.css
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   ├── hooks/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 ```
 
-## 📝 Customization
+---
 
-- **Colors**: Edit `tailwind.config.js` → `theme.extend.colors`
-- **Content**: Edit files in `src/data/`
-- **Social Links**: Edit `src/data/socialLinks.js`
-- **Projects**: Edit `src/data/projects.js`
-- **Resume**: Replace `public/resume.pdf`
+## 📌 Featured Projects
+
+### 💰 SmartSpend Expense Manager
+
+Flutter-based expense tracker with categories, reports, and analytics.
+
+### 🍽️ Recipe Finder App
+
+React application to search and save recipes using an external API and Supabase.
+
+### 📅 Smart Daily Planner
+
+Task and productivity management app built with React, Material UI, and Supabase.
+
+### 🤖 Face Tracker by AI-ML
+
+Real-time face detection and tracking using Python, OpenCV, and machine learning.
+
+### ❤️ Smart Health Monitoring System
+
+IoT-based elderly health monitoring system.
+
+### ♿ Wheelchair Fall Detection System
+
+IoT project that detects falls and sends instant SMS alerts.
+
+---
+
+## 💼 Experience
+
+### Product Support Intern — Cartrabbit
+
+* Debugged production issues
+* Coordinated with developers
+* Resolved 100+ customer queries
+
+### Frontend Development Intern — One Data Software Solutions
+
+* Built responsive React interfaces
+* Worked on production frontend tasks
+
+---
+
+## 🎓 Education
+
+**B.Tech Information Technology**
+Dr. NGP Institute of Technology, Coimbatore
+Graduating in 2026
+
+---
+
+## 🏆 Certifications
+
+* Programming in Java — NPTEL
+* IoT and Web 4.0 — NPTEL
+* Human Computer Interaction — NPTEL
+
+---
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sanjay1771/portfolio.git
+cd portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Development Server
+
+```bash
+npm run dev
+```
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+### 5. Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🚀 Deployment
+
+This portfolio is deployed using Vercel.
+
+### Deploy Your Own
+
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Deploy.
+
+---
+
+## 📬 Contact
+
+* 📧 Email: [sanjayk.codes@gmail.com](mailto:sanjayk.codes@gmail.com)
+* 💼 LinkedIn: [https://www.linkedin.com/in/sanjay-k-160068258](https://www.linkedin.com/in/sanjay-k-160068258)
+* 🐙 GitHub: [https://github.com/Sanjay1771](https://github.com/Sanjay1771)
+* 💬 WhatsApp: [https://wa.me/916374261771](https://wa.me/916374261771)
+
+> Note: The WhatsApp link opens a direct chat without displaying the phone number publicly in this README.
+
+---
 
 ## 📄 License
 
-MIT © Sanjay K
+This project is open source and available under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a star on GitHub.
+
+---
+
+## 👨‍💻 Author
+
+**Sanjay K**
+Full Stack Developer | Flutter Developer | Freelancer
+
+> Building scalable web, mobile, and AI applications with modern technologies.
