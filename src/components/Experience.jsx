@@ -51,11 +51,11 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto relative z-10">
         <SectionHeading title="Experience" subtitle="My professional internships and work history" />
         
-        <div className="relative mt-16 overflow-hidden">
+        <div className="relative mt-16 overflow-hidden isolate">
           
           {/* Timeline Bar (Desktop: Horizontal, Mobile: slightly adapted or hidden if we use carousel dots instead, but user wants full-width line) */}
           {/* LINE BEHIND - DESKTOP ONLY */}
-          <div className="hidden md:block absolute inset-x-0 top-1/2 -translate-y-1/2 z-0 pointer-events-none">
+          <div className="hidden md:block absolute inset-x-0 top-1/2 -translate-y-1/2 z-[-1] pointer-events-none">
             <div className="h-[2px] w-full bg-gradient-to-r from-[#8B5CF6] via-[#06B6D4] to-[#F59E0B] rounded-full shadow-md" />
           </div>
 

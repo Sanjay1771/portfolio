@@ -44,16 +44,16 @@ export default function Education() {
       <div className="max-w-4xl mx-auto px-4">
         <SectionHeading title="Education" subtitle="My academic growth and foundation" />
         
-        <div className="relative mt-12 overflow-hidden">
+        <div className="relative mt-12 overflow-hidden isolate">
           
           {/* Vertical Connecting Line */}
           {/* VERTICAL LINE BEHIND */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 z-0 pointer-events-none">
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 z-[-1] pointer-events-none">
             <div className="w-[2px] h-full bg-gradient-to-b from-[#8B5CF6] via-[#06B6D4] to-[#F59E0B] rounded-full shadow-md" />
           </div>
 
           {/* CARDS ABOVE */}
-          <div className="relative z-10 flex flex-col gap-8">
+          <div className="relative z-10 flex flex-col-reverse items-center w-full gap-8">
             {educationData.map((edu, index) => (
               <motion.div
                 key={edu.id}
