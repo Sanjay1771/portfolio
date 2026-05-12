@@ -44,20 +44,16 @@ export default function Education() {
       <div className="max-w-4xl mx-auto px-4">
         <SectionHeading title="Education" subtitle="My academic growth and foundation" />
         
-        <div className="relative mt-12 flex flex-col items-center">
+        <div className="relative mt-12 overflow-hidden">
           
           {/* Vertical Connecting Line */}
-          <div className="absolute top-0 bottom-0 w-1 bg-gray-800 rounded-full z-0">
-             <motion.div 
-               className="w-full bg-gradient-to-t from-violet-primary via-cyan-accent to-amber-400 rounded-full"
-               initial={{ height: 0 }}
-               whileInView={{ height: '100%' }}
-               viewport={{ once: true, margin: '-50px' }}
-               transition={{ duration: 1.5, ease: 'easeOut' }}
-             />
+          {/* VERTICAL LINE BEHIND */}
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 z-0 pointer-events-none">
+            <div className="w-[2px] h-full bg-gradient-to-b from-[#8B5CF6] via-[#06B6D4] to-[#F59E0B] rounded-full shadow-md" />
           </div>
 
-          <div className="flex flex-col-reverse items-center w-full gap-8 z-10">
+          {/* CARDS ABOVE */}
+          <div className="relative z-10 flex flex-col gap-8">
             {educationData.map((edu, index) => (
               <motion.div
                 key={edu.id}

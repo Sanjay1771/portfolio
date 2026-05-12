@@ -51,17 +51,12 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto relative z-10">
         <SectionHeading title="Experience" subtitle="My professional internships and work history" />
         
-        <div className="relative mt-16 mb-8 px-4 md:px-12">
+        <div className="relative mt-16 overflow-hidden">
           
           {/* Timeline Bar (Desktop: Horizontal, Mobile: slightly adapted or hidden if we use carousel dots instead, but user wants full-width line) */}
-          <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2 bg-gray-800 rounded-full hidden md:block z-0">
-             <motion.div 
-               className="h-full rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4]"
-               initial={{ width: 0 }}
-               whileInView={{ width: '100%' }}
-               viewport={{ once: true, margin: '-50px' }}
-               transition={{ duration: 1.5, ease: 'easeOut' }}
-             />
+          {/* LINE BEHIND - DESKTOP ONLY */}
+          <div className="hidden md:block absolute inset-x-0 top-1/2 -translate-y-1/2 z-0 pointer-events-none">
+            <div className="h-[2px] w-full bg-gradient-to-r from-[#8B5CF6] via-[#06B6D4] to-[#F59E0B] rounded-full shadow-md" />
           </div>
 
           {/* Navigation Arrows */}
@@ -76,7 +71,8 @@ export default function Experience() {
              </div>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 relative z-10">
+          {/* CARDS ABOVE */}
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <AnimatePresence mode="popLayout">
               {visibleExperiences.map((exp, index) => (
                 <motion.div
