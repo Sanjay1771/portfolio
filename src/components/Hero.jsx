@@ -199,8 +199,12 @@ export default function Hero() {
             <span>View Projects</span>
             <HiArrowDown className="text-lg" />
           </button>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary text-base">
-            <HiDownload className="text-lg" />
+          <a 
+            href="/resume.pdf"
+            download="Sanjay-K-Resume.pdf"
+            className="btn-secondary flex items-center gap-2 text-base group w-full sm:w-auto justify-center"
+          >
+            <HiDownload className="text-lg group-hover:-translate-y-0.5 transition-transform" />
             <span>Download Resume</span>
           </a>
         </motion.div>
