@@ -40,20 +40,20 @@ const Education = () => {
               whileInView={{ opacity: 1, x: 0 }}
               whileHover={{ scale: 1.02, y: -6 }}
               transition={{ duration: 0.6, type: "spring" }}
-              className="group relative bg-white/5 backdrop-blur-3xl border border-purple-500/30 rounded-3xl p-5 shadow-2xl hover:shadow-[0_25px_80px_rgba(139,92,246,0.2)] hover:border-purple-400/50 max-w-[28rem] mx-auto md:ml-0"
+              className="group relative bg-white/5 backdrop-blur-3xl border border-purple-500/20 rounded-3xl p-4 shadow-xl hover:shadow-[0_25px_80px_rgba(139,92,246,0.25)] hover:border-purple-400/30 transition-all duration-500 max-w-[25rem] mx-auto md:ml-0"
             >
               <div className="absolute left-4 md:-left-5 top-10 w-3.5 h-3.5 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full shadow-[0_0_12px_rgba(139,92,246,0.8)] group-hover:scale-125 transition-transform" />
-              <div className="flex items-center sm:items-start gap-5">
-                <div className="w-14 h-14 bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm rounded-2xl border-2 border-purple-500/30 flex-shrink-0 flex items-center justify-center group-hover:rotate-6 transition-transform">
-                  <span className="text-2xl">📚</span>
+              <div className="flex items-center sm:items-start gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm rounded-2xl border-2 border-purple-500/30 flex-shrink-0 flex items-center justify-center group-hover:rotate-6 transition-transform">
+                  <span className="text-xl">📚</span>
                 </div>
                 <div className="flex-1 text-left pt-1">
-                  <h3 className="text-lg font-black text-white mb-1 font-display">10th CBSE</h3>
-                  <p className="text-gray-400 mb-3 text-sm font-semibold">Sri Ambal Thulasi Public School</p>
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-full border border-purple-500/30">
-                    <span className="text-xs font-bold text-purple-400">2020</span>
-                    <span className="w-px h-3 bg-white/30" />
-                    <span className="text-xs font-bold text-white">74.8%</span>
+                  <h3 className="text-base md:text-lg font-black text-white mb-0.5 font-display">10th CBSE</h3>
+                  <p className="text-gray-400 mb-2.5 text-sm font-semibold">Sri Ambal Thulasi Public School</p>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-full border border-purple-500/30">
+                    <span className="text-[10px] font-bold text-purple-400">2020</span>
+                    <span className="w-px h-2.5 bg-white/30" />
+                    <span className="text-[10px] font-bold text-white">74.8%</span>
                   </div>
                 </div>
               </div>

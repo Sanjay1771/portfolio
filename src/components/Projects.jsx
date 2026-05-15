@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { HiExternalLink, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { FaGithub } from 'react-icons/fa';
 import SectionHeading from './SectionHeading';
@@ -32,9 +32,10 @@ export default function Projects() {
   // Auto-play interval
   useEffect(() => {
     if (isHovered) return;
-    const timer = setInterval(nextSlide, 4000);
+    const interval = isMobile ? 3000 : 2800;
+    const timer = setInterval(nextSlide, interval);
     return () => clearInterval(timer);
-  }, [nextSlide, isHovered]);
+  }, [nextSlide, isHovered, isMobile]);
 
   // Framer Motion variants for stagger reveal
   const sectionVariants = {
@@ -89,7 +90,7 @@ export default function Projects() {
             <motion.div 
               className="flex gap-6"
               animate={{ x: `calc(-${currentIndex * (100 / visibleCount)}% - ${currentIndex * (24 / visibleCount)}px)` }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
               drag="x"
               dragConstraints={{ right: 0, left: -((projects.length - visibleCount) * 400) }}
               dragElastic={0.1}

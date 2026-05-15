@@ -10,7 +10,7 @@ import profileImg from '../assets/profile.png';
 const techIcons = [
   {
     Icon: FaReact,
-    style: { top: '5%', left: '60%' },
+    style: { top: '8%', left: '58%' },
     animate: {
       x: [0, 10, -8, 8, 0],
       y: [-4, 4, 8, -2, 0],
@@ -28,7 +28,7 @@ const techIcons = [
   },
   {
     Icon: FaPython,
-    style: { top: '72%', left: '80%', zIndex: 20 },
+    style: { top: '64%', left: '78%', zIndex: 20 },
     animate: {
       x: [2, -2, 4, -2, 2],
       y: [-8, 8, -6, 6, -8],
@@ -65,7 +65,7 @@ const techIcons = [
   },
   {
     Icon: FaGithub,
-    style: { top: '7%', left: '18%', zIndex: 20 },
+    style: { top: '10%', left: '23%', zIndex: 20 },
     animate: {
       x: [0, 0, 4, -4, 0],
       y: [0, -8, 0, 8, 0],
@@ -127,7 +127,7 @@ export default function Hero() {
 
           {/* PROFILE - CIRCULAR GLOW (LARGER) */}
           <motion.div
-                className="absolute w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-[200px] lg:h-[200px] rounded-full overflow-hidden bg-gradient-to-br from-violet-500/40 to-cyan-500/40 backdrop-blur-3xl border-[6px] border-white/60 shadow-2xl ring-12 ring-violet-500/50 ring-offset-12 ring-offset-black/70 z-10"
+            className="absolute w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-[200px] lg:h-[200px] rounded-full overflow-hidden bg-gradient-to-br from-violet-500/40 to-cyan-500/40 backdrop-blur-3xl border-[6px] border-white/60 shadow-2xl ring-12 ring-violet-500/50 ring-offset-12 ring-offset-black/70 z-10"
             style={{ boxShadow: '0 0 50px rgba(139,92,246,0.5)' }}
           >
             <img
@@ -199,7 +199,7 @@ export default function Hero() {
             <span>View Projects</span>
             <HiArrowDown className="text-lg" />
           </button>
-          <a 
+          <a
             href="/resume.pdf"
             download="Sanjay-K-Resume.pdf"
             className="btn-secondary flex items-center gap-2 text-base group w-full sm:w-auto justify-center"
