@@ -10,7 +10,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding relative scroll-mt-20">
+    <section id="about" className="section-padding relative scroll-mt-20 overflow-hidden w-full">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           title="About Me"

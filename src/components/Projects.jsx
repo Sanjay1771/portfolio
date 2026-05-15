@@ -49,8 +49,8 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section-padding relative overflow-hidden scroll-mt-20">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-violet-primary/10 rounded-full blur-[150px]" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-accent/10 rounded-full blur-[150px]" />
+      <div className="absolute top-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-violet-primary/10 rounded-full blur-[100px] sm:blur-[150px]" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-cyan-accent/10 rounded-full blur-[100px] sm:blur-[150px]" />
       
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading title="Featured Projects" subtitle="Showcasing web, mobile & AI skills built for real clients" />
@@ -65,22 +65,22 @@ export default function Projects() {
           onMouseLeave={() => setIsHovered(false)}
         >
           {/* Controls */}
-          <div className="absolute top-1/2 -left-4 md:-left-8 -translate-y-1/2 z-20">
+          <div className="absolute top-1/2 left-0 md:-left-8 -translate-y-1/2 z-20">
             <button 
               onClick={prevSlide}
-              className="w-12 h-12 rounded-full bg-dark-surface/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-violet-primary hover:border-violet-primary transition-all duration-300 shadow-xl"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-dark-surface/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-violet-primary hover:border-violet-primary transition-all duration-300 shadow-xl"
               aria-label="Previous projects"
             >
-              <HiChevronLeft className="text-2xl" />
+              <HiChevronLeft className="text-xl md:text-2xl" />
             </button>
           </div>
-          <div className="absolute top-1/2 -right-4 md:-right-8 -translate-y-1/2 z-20">
+          <div className="absolute top-1/2 right-0 md:-right-8 -translate-y-1/2 z-20">
             <button 
               onClick={nextSlide}
-              className="w-12 h-12 rounded-full bg-dark-surface/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-cyan-accent hover:border-cyan-accent transition-all duration-300 shadow-xl"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-dark-surface/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-cyan-accent hover:border-cyan-accent transition-all duration-300 shadow-xl"
               aria-label="Next projects"
             >
-              <HiChevronRight className="text-2xl" />
+              <HiChevronRight className="text-xl md:text-2xl" />
             </button>
           </div>
 

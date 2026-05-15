@@ -22,8 +22,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding relative scroll-mt-20">
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-violet-primary/8 rounded-full blur-[150px]" />
+    <section id="contact" className="section-padding relative scroll-mt-20 overflow-hidden w-full">
+      <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-violet-primary/8 rounded-full blur-[100px] sm:blur-[150px]" />
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeading title="Get In Touch" subtitle="Have a question or want to work together? Drop me a message!" />
         <div className="grid lg:grid-cols-5 gap-8">

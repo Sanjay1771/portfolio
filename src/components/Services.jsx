@@ -14,7 +14,7 @@ const itemVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding relative">
+    <section id="services" className="section-padding relative overflow-hidden w-full">
       <div className="max-w-7xl mx-auto">
         <SectionHeading title="Services" subtitle="What I can do for you and your business" />
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

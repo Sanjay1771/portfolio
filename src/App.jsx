@@ -34,9 +34,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-dark-bg text-gray-200">
+    <div className="relative min-h-screen bg-dark-bg text-gray-200 overflow-x-hidden">
       <Navbar onCommandMenu={openCommandMenu} />
-      <main>
+      <main className="w-full overflow-x-hidden">
         <Hero />
         <About />
         <Skills />

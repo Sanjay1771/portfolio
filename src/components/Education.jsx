@@ -42,7 +42,7 @@ const Education = () => {
               transition={{ duration: 0.6, type: "spring" }}
               className="group relative bg-white/5 backdrop-blur-3xl border border-purple-500/30 rounded-3xl p-5 shadow-2xl hover:shadow-[0_25px_80px_rgba(139,92,246,0.2)] hover:border-purple-400/50 max-w-[28rem] mx-auto md:ml-0"
             >
-              <div className="absolute -left-2 md:-left-5 top-10 w-3.5 h-3.5 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full shadow-[0_0_12px_rgba(139,92,246,0.8)] group-hover:scale-125 transition-transform" />
+              <div className="absolute left-4 md:-left-5 top-10 w-3.5 h-3.5 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full shadow-[0_0_12px_rgba(139,92,246,0.8)] group-hover:scale-125 transition-transform" />
               <div className="flex items-center sm:items-start gap-5">
                 <div className="w-14 h-14 bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm rounded-2xl border-2 border-purple-500/30 flex-shrink-0 flex items-center justify-center group-hover:rotate-6 transition-transform">
                   <span className="text-2xl">📚</span>
@@ -67,7 +67,7 @@ const Education = () => {
               transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
               className="group relative bg-white/5 backdrop-blur-3xl border border-cyan-500/30 rounded-3xl p-5 shadow-2xl hover:shadow-[0_25px_80px_rgba(6,182,212,0.2)] hover:border-cyan-400/50 max-w-[28rem] mx-auto md:mr-0"
             >
-              <div className="absolute -right-2 md:-right-5 top-10 w-3.5 h-3.5 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full shadow-[0_0_12px_rgba(6,182,212,0.8)] group-hover:scale-125 transition-transform" />
+              <div className="absolute right-4 md:-right-5 top-10 w-3.5 h-3.5 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full shadow-[0_0_12px_rgba(6,182,212,0.8)] group-hover:scale-125 transition-transform" />
               <div className="flex items-center sm:items-start gap-5">
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 backdrop-blur-sm rounded-2xl border-2 border-cyan-500/30 flex-shrink-0 flex items-center justify-center group-hover:rotate-6 transition-transform">
                   <span className="text-2xl">🎓</span>

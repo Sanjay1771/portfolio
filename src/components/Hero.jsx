@@ -91,9 +91,9 @@ export default function Hero() {
       <div className="absolute inset-0 animated-bg" />
 
       {/* Gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-violet-primary/20 rounded-full blur-[128px] animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-accent/15 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-violet-primary/5 rounded-full blur-[200px]" />
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-violet-primary/20 rounded-full blur-[80px] sm:blur-[128px] animate-pulse-glow" />
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-cyan-accent/15 rounded-full blur-[80px] sm:blur-[128px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-violet-primary/5 rounded-full blur-[100px] sm:blur-[200px]" />
 
       {/* Grid overlay */}
       <div
@@ -107,10 +107,10 @@ export default function Hero() {
 
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
         {/* Animation Container (Compact Safe Zone) */}
-        <div className="relative mx-auto mb-8 w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] flex items-center justify-center -mt-4 sm:-mt-8">
+        <div className="relative mx-auto mb-8 w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] flex items-center justify-center -mt-4 sm:-mt-8">
 
           {/* Shuffling Tech Icons (Micro-Float) */}
           {techIcons.map(({ Icon, style, animate }, i) => (

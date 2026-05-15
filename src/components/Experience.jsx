@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Experience = () => (
-  <section id="experience" className="py-20 bg-gradient-to-b from-slate-950/50 via-black to-slate-950/50 overflow-hidden scroll-mt-20">
+  <section id="experience" className="relative w-full py-20 bg-gradient-to-b from-slate-950/50 via-black to-slate-950/50 overflow-hidden scroll-mt-20">
     <div className="container mx-auto px-6 max-w-6xl">
       
       {/* HEADER - COMPACT */}

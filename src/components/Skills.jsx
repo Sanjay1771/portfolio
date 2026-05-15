@@ -22,10 +22,10 @@ const itemVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="section-padding relative scroll-mt-20">
+    <section id="skills" className="section-padding relative scroll-mt-20 overflow-hidden w-full">
       {/* Background glow */}
-      <div className="absolute top-1/2 left-0 w-72 h-72 bg-violet-primary/10 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-accent/10 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-0 w-48 h-48 sm:w-72 sm:h-72 bg-violet-primary/10 rounded-full blur-[80px] sm:blur-[120px]" />
+      <div className="absolute bottom-0 right-0 w-48 h-48 sm:w-72 sm:h-72 bg-cyan-accent/10 rounded-full blur-[80px] sm:blur-[120px]" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeading
